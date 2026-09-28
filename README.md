@@ -8,7 +8,9 @@ Aplicação Spring Boot que lê o CSV de candidatos do TSE (eleições de 2026, 
 
 - **Index**: A tela é dividida em duas colunas. À esquerda fica o painel de filtros: gênero (botões de opção), escolaridade (lista de seleção), faixa etária (idade mínima e máxima) e os botões **Filtrar** e **Limpar**. À direita aparecem a contagem de candidatos encontrados e a lista de cards horizontais, cada um com a foto oficial, nome de urna, número, cargo, partido, etiquetas de gênero e idade, escolaridade e ocupação. Em telas estreitas, o painel de filtros vai para cima da lista.
 
-| <img src="//src/prints/index.png" alt="Index" width="1000"/> |
+<img src="//src/prints/index.png">
+
+| <img src="prints/index.png" alt="Index" width="1000"/> |
 |:----------------------------------------------------:|
 |                        Index                         |
 
