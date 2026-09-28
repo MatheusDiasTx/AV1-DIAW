@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f1ee;
+    color: #222;
+}
+
+.topo {
+    background-color: #5a2d82;
+    color: #fff;
+    padding: 14px 24px;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.topo p {
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+    max-width: 1180px;
+    margin: 18px auto;
+    padding: 0 16px;
+}
+
+.painel-filtros {
+    background-color: #fff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    align-self: start;
+}
+
+.painel-filtros h3 {
+    margin: 14px 0 6px;
+    font-size: 14px;
+    color: #5a2d82;
+}
+
+.painel-filtros h3:first-child {
+    margin-top: 0;
+}
+
+.opcoes-genero label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.painel-filtros select,
+.faixa-idade input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.faixa-idade {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.botoes button,
+.botoes .limpar {
+    flex: 1;
+    padding: 9px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botoes button {
+    background-color: #5a2d82;
+    color: #fff;
+    border: 1px solid #5a2d82;
+}
+
+.botoes .limpar {
+    background-color: #fff;
+    color: #5a2d82;
+    border: 1px solid #5a2d82;
+}
+
+.resultado-info {
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.sem-resultado {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+}
+
+.lista-candidatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 12px;
+}
+
+.card-candidato {
+    display: flex;
+    gap: 12px;
+    background-color: #fff;
+    padding: 10px;
+    border-left: 4px solid #5a2d82;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.foto-candidato {
+    width: 90px;
+    aspect-ratio: 161 / 225;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dados h2 {
+    margin: 0 0 2px;
+    font-size: 15px;
+}
+
+.dados .numero {
+    margin-left: 4px;
+    font-size: 14px;
+    color: #5a2d82;
+}
+
+.dados p {
+    margin: 0;
+}
+
+.cargo {
+    font-size: 13px;
+    color: #444;
+}
+
+.etiquetas {
+    margin: 5px 0;
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #eee;
+    color: #555;
+}
+
+.etiqueta-f {
+    background-color: #f7e1f0;
+    color: #a0226f;
+}
+
+.etiqueta-m {
+    background-color: #e1ecf7;
+    color: #1f5c99;
+}
+
+.etiqueta-idade {
+    background-color: #fdf1d6;
+    color: #8a5a00;
+}
+
+.extra {
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
